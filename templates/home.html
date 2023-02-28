@@ -16,11 +16,12 @@
     <div class="container">
     <h1>Hello there, you'll learn about flask projects.</h1>
     <img class="img-fluid" id="banner" src="static/banner.jpg">
-    <h2> about </h2>
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At auctor urna nunc id. Neque egestas congue quisque egestas diam in arcu cursus euismod. Purus faucibus ornare suspendisse sed nisi. Malesuada fames ac turpis egestas maecenas pharetra convallis. Placerat duis ultricies lacus sed turpis tincidunt. Augue mauris augue neque gravida in fermentum et. Sed tempus urna et pharetra pharetra massa. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce. Egestas sed sed risus pretium quam vulputate dignissim suspendisse in. Diam ut venenatis tellus in metus vulputate. Volutpat ac tincidunt vitae semper quis lectus nulla.
-
-Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Pellentesque habitant morbi tristique senectus et netus et malesuada. Feugiat nisl pretium fusce id velit. Massa massa ultricies mi quis hendrerit dolor magna eget est. Lectus arcu bibendum at varius vel pharetra. Vestibulum lectus mauris ultrices eros. Fames ac turpis egestas sed tempus urna et pharetra pharetra. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus. Velit sed ullamcorper morbi tincidunt ornare massa. Tortor consequat id porta nibh venenatis.
-</p>
-</div>
+    <h2>Job Positions</h2>
+  <div>
+    {% for job in jobs %}
+       {% include 'jobitem.html' %} 
+    {% endfor %}
+  </div>
+  </div>
   </body>
 </html>
